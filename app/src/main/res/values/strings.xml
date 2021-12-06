@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">OmarApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="customerBtn_label">Clientes</string>
+    <string name="paymentBtn_label">Registro de pagos</string>
+    <string name="name_header_label">Nombre</string>
+    <string name="lastName_header_label">Apellido p.</string>
+    <string name="secondLastName_header_label">Apellido m.</string>
+    <string name="date_header_label">Fecha</string>
+    <string name="amount_header_label">Monto</string>
+    <string name="customerId_header_label">Id Cliente</string>
+    <string name="name_req">Nombre <font color='#FF0000'>*</font></string>
+    <string name="middleName_notReq">Middle name</string>
+    <string name="lastName_req">Apellido paterno <font color='#FF0000'>*</font></string>
+    <string name="secondLastName_req">Apellido materno <font color='#FF0000'>*</font></string>
+    <string name="birthdate_req">Fecha de nacimiento <font color='#FF0000'>*</font></string>
+    <string name="gender_selection">Seleccione el género <font color='#FF0000'>*</font></string>
+    <string name="gender_male">Masculino</string>
+    <string name="gender_female">Femenino</string>
+    <string name="save_label">Guardar</string>
+    <string name="id_customer_pay_req">ID de cliente <font color='#FF0000'>*</font></string>
+    <string name="payment_date_req">Fecha de pago <font color='#FF0000'>*</font></string>
+    <string name="payment_amount_req">Monto <font color='#FF0000'>*</font></string>
+    <string name="detail_id">Id:</string>
+    <string name="detailName">Nombre:</string>
+    <string name="detailMiddleName">Segundo nombre:</string>
+    <string name="detailLastName">Apellido paterno:</string>
+    <string name="detailSecondLastName">Apellido materno:</string>
+    <string name="detail_birthdate">Fecha de nacimiento (DD/MM/AAAA):</string>
+    <string name="detailGender">Género:</string>
+    <string name="detailBtnPay">Pagos</string>
+    <string name="detailBtnNewPay">Nuevo pago</string>
+    <string name="detailBtnEdit">Editar</string>
+    <string name="newCustomerBtn_label">Nuevo Cliente</string>
+    <string name="newPaymentBtn_label">Nuevo Pago</string>
+    <string name="editFragment_label">Editar Cliente</string>
+    <string name="addFragment_label">Agregar Cliente</string>
+    <string name="addFab_label">Agregar</string>
+</resources>

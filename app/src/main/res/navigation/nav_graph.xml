@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.omarapplication.view.HomeFragment"
+        android:label="Omar Application"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_customerFragment"
+            app:destination="@id/customerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addCustomerFragment"
+            app:destination="@id/addCustomerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addPaymentFragment"
+            app:destination="@id/addPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerFragment"
+        android:name="com.example.omarapplication.view.CustomerFragment"
+        android:label="Lista de Clientes"
+        tools:layout="@layout/fragment_customer_item_list" >
+        <action
+            android:id="@+id/action_customerFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_customerFragment_to_addCustomerFragment"
+            app:destination="@id/addCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.omarapplication.view.PaymentFragment"
+        android:label="Lista de pagos"
+        tools:layout="@layout/fragment_payment_item_list" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.omarapplication.view.DetailFragment"
+        android:label="Detalle de cliente"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="customer_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailFragment_to_addCustomerFragment"
+            app:destination="@id/addCustomerFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_addPaymentFragment"
+            app:destination="@id/addPaymentFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCustomerFragment"
+        android:name="com.example.omarapplication.view.AddCustomerFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_customer" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="client_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addCustomerFragment_to_customerFragment"
+            app:destination="@id/customerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPaymentFragment"
+        android:name="com.example.omarapplication.view.AddPaymentFragment"
+        android:label="Agregar pago"
+        tools:layout="@layout/fragment_add_payment" >
+        <argument
+            android:name="cust_pid"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addPaymentFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
